@@ -1,0 +1,97 @@
+
+@startuml
+
+title OOP Lab 3.1 - Variant 14
+
+abstract class Person {
+    + FirstName : string
+    + LastName : string
+    + GetUniqueId() : string
+    + Study() : string
+}
+
+interface IDrawable {
+    + Draw() : string
+}
+
+class Student {
+    + Course : int
+    + StudentId : string
+    + Scholarship : decimal
+    + Passport : string
+    + StudySessions : int
+    + DrawingsCount : int
+    + GetUniqueId() : string
+    + Study() : string
+    + Draw() : string
+}
+
+class Postman {
+    + EmployeeId : string
+    + StudySessions : int
+    + GetUniqueId() : string
+    + Study() : string
+}
+
+class Mountaineer {
+    + MountaineerId : string
+    + StudySessions : int
+    + GetUniqueId() : string
+    + Study() : string
+}
+
+class PersonService {
+    - people : Person[]
+    + AddPerson() : bool
+    + GetAll() : Person[]
+    + FindById() : Person
+    + FindByLastName() : Person[]
+    + DeleteById() : bool
+    + GetFourthYearStudentsWithoutScholarship() : Student[]
+    + CountFourthYearStudentsWithoutScholarship() : int
+    + ReplaceAll() : void
+}
+
+class PersonRepository {
+    + Serialize() : string[]
+    + Deserialize() : Person[]
+}
+
+class PersonValidator {
+    + IsValidName() : bool
+    + IsValidStudent() : bool
+}
+
+interface ITextFileStore {
+    + WriteAllText() : void
+    + ReadAllText() : string
+    + FileExists() : bool
+    + DeleteFile() : void
+}
+
+class StreamTextFileStore {
+    + WriteAllText() : void
+    + ReadAllText() : string
+    + FileExists() : bool
+    + DeleteFile() : void
+}
+
+class ConsoleMenu {
+    + Run() : void
+}
+
+Person <|-- Student
+Person <|-- Postman
+Person <|-- Mountaineer
+
+IDrawable <|.. Student
+ITextFileStore <|.. StreamTextFileStore
+
+PersonService o-- Person
+PersonRepository ..> Person
+ConsoleMenu --> PersonService
+ConsoleMenu --> PersonRepository
+ConsoleMenu --> ITextFileStore
+
+@enduml
+

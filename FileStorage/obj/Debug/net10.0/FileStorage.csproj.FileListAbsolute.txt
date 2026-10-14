@@ -1,0 +1,11 @@
+C:\Users\Daria\лаб ооп 1\FileStorage\bin\Debug\net10.0\FileStorage.deps.json
+C:\Users\Daria\лаб ооп 1\FileStorage\bin\Debug\net10.0\FileStorage.dll
+C:\Users\Daria\лаб ооп 1\FileStorage\bin\Debug\net10.0\FileStorage.pdb
+C:\Users\Daria\лаб ооп 1\FileStorage\obj\Debug\net10.0\FileStorage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daria\лаб ооп 1\FileStorage\obj\Debug\net10.0\FileStorage.AssemblyInfoInputs.cache
+C:\Users\Daria\лаб ооп 1\FileStorage\obj\Debug\net10.0\FileStorage.AssemblyInfo.cs
+C:\Users\Daria\лаб ооп 1\FileStorage\obj\Debug\net10.0\FileStorage.csproj.CoreCompileInputs.cache
+C:\Users\Daria\лаб ооп 1\FileStorage\obj\Debug\net10.0\FileStorage.dll
+C:\Users\Daria\лаб ооп 1\FileStorage\obj\Debug\net10.0\refint\FileStorage.dll
+C:\Users\Daria\лаб ооп 1\FileStorage\obj\Debug\net10.0\FileStorage.pdb
+C:\Users\Daria\лаб ооп 1\FileStorage\obj\Debug\net10.0\ref\FileStorage.dll
