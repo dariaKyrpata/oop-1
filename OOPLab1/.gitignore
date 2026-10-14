@@ -1,0 +1,8 @@
+
+**/bin/
+**/obj/
+.vs/
+people.txt
+**/people.txt
+*.user
+*.suo
